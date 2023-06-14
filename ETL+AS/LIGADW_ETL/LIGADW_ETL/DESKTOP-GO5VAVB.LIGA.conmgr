@@ -1,0 +1,10 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="DESKTOP-GO5VAVB.LIGA"
+  DTS:DTSID="{7AA9B7EA-78F1-4241-80A5-58ABA0D085F6}"
+  DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=DESKTOP-GO5VAVB;Initial Catalog=LIGA;Integrated Security=True;Application Name=SSIS-LIGADW_ETL-{7AA9B7EA-78F1-4241-80A5-58ABA0D085F6}DESKTOP-GO5VAVB.LIGA;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

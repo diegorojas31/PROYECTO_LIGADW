@@ -1,0 +1,527 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="d1c01f3d-8cd6-47b0-affb-63a3bcbc57f1" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>LIGADW_VISTAS</ID>
+  <Name>LIGADW_VISTAS</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>LIGADW_DATA</DataSourceID>
+  <Schema>
+    <xs:schema id="LIGADW_VISTAS" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="LIGADW_VISTAS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="e3ec1c1c-8a3d-4a6d-a392-a2fe22225535">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_DIM_ARBITRO" msprop:DbTableName="DIM_ARBITRO" msprop:FriendlyName="DIM_ARBITRO" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="e0a1a2db-9727-41f9-b37b-d0e1495a553a">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="COD_ARBITRO" msprop:FriendlyName="COD_ARBITRO" msprop:DbColumnName="COD_ARBITRO" msprop:design-time-name="7c982a52-1f6d-49c7-9427-f4cfea9f32e6" type="xs:int" />
+                  <xs:element name="NOMBRE_ARBITRO" msprop:FriendlyName="NOMBRE_ARBITRO" msprop:DbColumnName="NOMBRE_ARBITRO" msprop:design-time-name="eb58cbfb-52d5-4e80-9461-a2778e33e437">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="COD_DEPARTAMENTO" msprop:FriendlyName="COD_DEPARTAMENTO" msprop:DbColumnName="COD_DEPARTAMENTO" msprop:design-time-name="69c0928c-e46e-4ee8-9c5b-17875c40476c" type="xs:int" />
+                  <xs:element name="DEPARTAMENTO" msprop:FriendlyName="DEPARTAMENTO" msprop:DbColumnName="DEPARTAMENTO" msprop:design-time-name="9ffdd2a1-a0f9-46dc-9e90-02b3f55eb854">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_EQUIPO" msprop:DbTableName="DIM_EQUIPO" msprop:FriendlyName="DIM_EQUIPO" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="31065e7b-ccea-42d9-860b-18b8bb50550c">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="COD_EQUIPO" msprop:FriendlyName="COD_EQUIPO" msprop:DbColumnName="COD_EQUIPO" msprop:design-time-name="7517d261-248e-42fb-a3cd-8091a5c8a04d" type="xs:int" />
+                  <xs:element name="NOMBRE_EQUIPO" msprop:FriendlyName="NOMBRE_EQUIPO" msprop:DbColumnName="NOMBRE_EQUIPO" msprop:design-time-name="9bd73c81-e5ed-4074-936b-1755082c0003">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="COD_ESTADIO" msprop:FriendlyName="COD_ESTADIO" msprop:DbColumnName="COD_ESTADIO" msprop:design-time-name="d69eb357-77e6-43d9-bf4d-e70c9c0112ae" type="xs:int" />
+                  <xs:element name="NOMBRE_ESTADIO" msprop:FriendlyName="NOMBRE_ESTADIO" msprop:DbColumnName="NOMBRE_ESTADIO" msprop:design-time-name="80bc7a2e-a7df-45cd-bd2b-0d1130cd73e0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="COD_DEPARTAMENTO" msprop:FriendlyName="COD_DEPARTAMENTO" msprop:DbColumnName="COD_DEPARTAMENTO" msprop:design-time-name="53012a4a-21f2-49e6-8873-9f3f10d41814" type="xs:int" />
+                  <xs:element name="NOMBRE_DEPARTAMENTO" msprop:FriendlyName="NOMBRE_DEPARTAMENTO" msprop:DbColumnName="NOMBRE_DEPARTAMENTO" msprop:design-time-name="63aefa99-9c97-4d2c-85e0-25f55aaae7c3">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_JUGADOR" msprop:DbTableName="DIM_JUGADOR" msprop:FriendlyName="DIM_JUGADOR" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="4e44d360-b966-44d2-9934-eed252f70c9c">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="COD_JUGADOR" msprop:FriendlyName="COD_JUGADOR" msprop:DbColumnName="COD_JUGADOR" msprop:design-time-name="81939cc4-4c20-444f-8d28-0962d8fb9073" type="xs:int" />
+                  <xs:element name="NOMBRE_JUGADOR" msprop:FriendlyName="NOMBRE_JUGADOR" msprop:DbColumnName="NOMBRE_JUGADOR" msprop:design-time-name="f9e8d0ee-0948-45c6-a444-ba2581fc7c88">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="60" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="EQUIPO" msprop:FriendlyName="EQUIPO" msprop:DbColumnName="EQUIPO" msprop:design-time-name="24cacc5e-2bdb-415f-91aa-dcf9f9ea97ac" type="xs:int" />
+                  <xs:element name="NOMBRE_EQUIPO" msprop:FriendlyName="NOMBRE_EQUIPO" msprop:DbColumnName="NOMBRE_EQUIPO" msprop:design-time-name="055dbbca-e322-48da-b245-39cb48b4022e">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="COD_POSICION" msprop:FriendlyName="COD_POSICION" msprop:DbColumnName="COD_POSICION" msprop:design-time-name="2a7880de-e30e-44aa-9e9f-5e127fbab67b" type="xs:int" />
+                  <xs:element name="NOMBRE_POSICION" msprop:FriendlyName="NOMBRE_POSICION" msprop:DbColumnName="NOMBRE_POSICION" msprop:design-time-name="1e1aba5d-8a39-4ac3-b119-bdd8b54a14a5">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_PERIODO" msprop:DbTableName="DIM_PERIODO" msprop:FriendlyName="DIM_PERIODO" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="56f62aea-5777-4ee0-bb52-f84c0cb1df22">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="COD_PERIODO" msprop:FriendlyName="COD_PERIODO" msprop:DbColumnName="COD_PERIODO" msprop:design-time-name="05e5963a-63f6-49a7-a286-6f81425aaa11" type="xs:int" />
+                  <xs:element name="NOMBRE_PERIODO" msprop:FriendlyName="NOMBRE_PERIODO" msprop:DbColumnName="NOMBRE_PERIODO" msprop:design-time-name="fa243e9a-058e-4599-bb85-6fbd79fddc4d">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_TIEMPO" msprop:DbTableName="DIM_TIEMPO" msprop:FriendlyName="DIM_TIEMPO" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="eedad2dc-ff17-4cd0-8042-35d1ef96c271">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="FECHA" msprop:FriendlyName="FECHA" msprop:DbColumnName="FECHA" msprop:design-time-name="1a42d09d-ce08-456b-b9ad-59c7db53d8c3">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DIA" msprop:FriendlyName="DIA" msprop:DbColumnName="DIA" msprop:design-time-name="63a63b93-9420-431b-8579-5bbe98f7eb12">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="MES" msprop:FriendlyName="MES" msprop:DbColumnName="MES" msprop:design-time-name="c4365842-b6e7-4df6-9135-47e31c3ddaf8">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="TRIMESTRE" msprop:FriendlyName="TRIMESTRE" msprop:DbColumnName="TRIMESTRE" msprop:design-time-name="faf9be8f-7564-4549-8cb3-a34b6dd7adeb">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="SEMESTRE" msprop:FriendlyName="SEMESTRE" msprop:DbColumnName="SEMESTRE" msprop:design-time-name="7758779e-5bca-4e04-bdb8-49b50532ef53">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="AÑO" msprop:FriendlyName="AÑO" msprop:DbColumnName="AÑO" msprop:design-time-name="f2a49adf-9a2a-43c3-b0c5-dea80f481bfe" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_TIPOARBITRO" msprop:DbTableName="DIM_TIPOARBITRO" msprop:FriendlyName="DIM_TIPOARBITRO" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="3c2064b0-3283-402c-9955-91e9b8c0efaa">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="COD_TIPOARBITRO" msprop:FriendlyName="COD_TIPOARBITRO" msprop:DbColumnName="COD_TIPOARBITRO" msprop:design-time-name="8cda2efd-0727-4fc1-991d-823f2261a0bb" type="xs:int" />
+                  <xs:element name="TIPO_ARBITRO" msprop:FriendlyName="TIPO_ARBITRO" msprop:DbColumnName="TIPO_ARBITRO" msprop:design-time-name="491ad91e-2ec3-4d8e-be4f-9307a119666b">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_TIPOGOL" msprop:DbTableName="DIM_TIPOGOL" msprop:FriendlyName="DIM_TIPOGOL" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="f5befd3b-1faf-4ebf-b52f-ad069a353f4b">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="COD_TIPOGOL" msprop:FriendlyName="COD_TIPOGOL" msprop:DbColumnName="COD_TIPOGOL" msprop:design-time-name="89c0d418-5d93-435a-888b-18d78c1a32af" type="xs:int" />
+                  <xs:element name="NOMBRE_TIPOGOL" msprop:FriendlyName="NOMBRE_TIPOGOL" msprop:DbColumnName="NOMBRE_TIPOGOL" msprop:design-time-name="2fb2673b-79f1-44ae-bbdc-1f4cc92df38d">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_TORNEO" msprop:DbTableName="DIM_TORNEO" msprop:FriendlyName="DIM_TORNEO" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="11fae1e3-00cb-491d-8f09-d2a22e2ff5f2">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="PARTIDO" msprop:FriendlyName="PARTIDO" msprop:DbColumnName="PARTIDO" msprop:design-time-name="ba740be8-e6d2-4293-a43f-35352a8b8db4" type="xs:int" />
+                  <xs:element name="NOMBRE_PARTIDO" msprop:FriendlyName="NOMBRE_PARTIDO" msprop:DbColumnName="NOMBRE_PARTIDO" msprop:design-time-name="b49aa165-a6d6-4585-ae89-f689c1aa7aee">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NOMBRE_JORNADA" msprop:FriendlyName="NOMBRE_JORNADA" msprop:DbColumnName="NOMBRE_JORNADA" msprop:design-time-name="4a43e711-3066-44cf-b6fa-1629033dfdcc" type="xs:int" minOccurs="0" />
+                  <xs:element name="COD_TORNEO" msprop:FriendlyName="COD_TORNEO" msprop:DbColumnName="COD_TORNEO" msprop:design-time-name="dde14a57-5544-4bc9-9ae7-3523127caf0f" type="xs:int" />
+                  <xs:element name="NOMBRE_TORNEO" msprop:FriendlyName="NOMBRE_TORNEO" msprop:DbColumnName="NOMBRE_TORNEO" msprop:design-time-name="e0311f31-5a9e-4dbb-931e-e4af457ec4c3">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_FACT_ARBITRO" msprop:DbTableName="FACT_ARBITRO" msprop:FriendlyName="FACT_ARBITRO" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="6073bdb3-7b96-4e9a-a70a-db83ddae497b">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="FACT_ARBITROKEY" msprop:FriendlyName="FACT_ARBITROKEY" msprop:DbColumnName="FACT_ARBITROKEY" msprop:design-time-name="be4f1c35-120a-40ed-8dcb-16ee7529a5d4" type="xs:int" />
+                  <xs:element name="COD_ARBITRO" msprop:FriendlyName="COD_ARBITRO" msprop:DbColumnName="COD_ARBITRO" msprop:design-time-name="c6d7dd2a-ee5b-4fd7-a2e5-ed4f39dce3b2" type="xs:int" />
+                  <xs:element name="COD_TIPOARBITRO" msprop:FriendlyName="COD_TIPOARBITRO" msprop:DbColumnName="COD_TIPOARBITRO" msprop:design-time-name="8e96f6a6-de6f-42a2-a94f-c6bdb5c09dbf" type="xs:int" />
+                  <xs:element name="COD_TIEMPO" msprop:FriendlyName="COD_TIEMPO" msprop:DbColumnName="COD_TIEMPO" msprop:design-time-name="5402bcb8-9578-4f8e-8115-1f4808057beb">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="COD_TORNEO" msprop:FriendlyName="COD_TORNEO" msprop:DbColumnName="COD_TORNEO" msprop:design-time-name="cb7fc7cb-6a3d-42eb-88a3-2d456b69c25b" type="xs:int" />
+                  <xs:element name="COD_PERIODO" msprop:FriendlyName="COD_PERIODO" msprop:DbColumnName="COD_PERIODO" msprop:design-time-name="309c9b29-cfb2-4a0e-b2c7-b375698e8027" type="xs:int" />
+                  <xs:element name="COD_JUGADOR" msprop:FriendlyName="COD_JUGADOR" msprop:DbColumnName="COD_JUGADOR" msprop:design-time-name="ca7e7614-47b7-47a3-910e-3753dbe72213" type="xs:int" />
+                  <xs:element name="FALTAS" msprop:FriendlyName="FALTAS" msprop:DbColumnName="FALTAS" msprop:design-time-name="85a9df6c-6124-4bbf-af93-883384e57825" type="xs:int" />
+                  <xs:element name="FALTA_SINTARJETA" msprop:FriendlyName="FALTA_SINTARJETA" msprop:DbColumnName="FALTA_SINTARJETA" msprop:design-time-name="0f19d12c-8845-479b-a85e-9c52f782b3d0" type="xs:int" />
+                  <xs:element name="TARJETA_AMARILLA" msprop:FriendlyName="TARJETA_AMARILLA" msprop:DbColumnName="TARJETA_AMARILLA" msprop:design-time-name="e867e513-a7a7-47c0-be9e-813ad49a1fa6" type="xs:int" />
+                  <xs:element name="EXPULSADOS" msprop:FriendlyName="EXPULSADOS" msprop:DbColumnName="EXPULSADOS" msprop:design-time-name="7598ffbd-23ca-4aed-98c5-900c72f955f1" type="xs:int" />
+                  <xs:element name="MIN_FALTA" msprop:FriendlyName="MIN_FALTA" msprop:DbColumnName="MIN_FALTA" msprop:design-time-name="a565e5b6-c026-45cd-bb68-8bc28c7eef84" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_FACT_EQUIPO" msprop:DbTableName="FACT_EQUIPO" msprop:FriendlyName="FACT_EQUIPO" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="12f0b6ae-6da5-4c8d-b70d-486bbd0e5cca">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="FACT_EQUIPOKEY" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="FACT_EQUIPOKEY" msprop:DbColumnName="FACT_EQUIPOKEY" msprop:design-time-name="34ef2773-7eeb-45e5-a21f-f5c09cc6f75c" type="xs:int" />
+                  <xs:element name="COD_TIEMPO" msprop:FriendlyName="COD_TIEMPO" msprop:DbColumnName="COD_TIEMPO" msprop:design-time-name="e64ffce6-b617-4a07-aa22-1334d8777f50">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="COD_TORNEO" msprop:FriendlyName="COD_TORNEO" msprop:DbColumnName="COD_TORNEO" msprop:design-time-name="7bc0fec5-96fd-4ec7-9e0f-9dc61c132b7a" type="xs:int" />
+                  <xs:element name="COD_EQUIPO" msprop:FriendlyName="COD_EQUIPO" msprop:DbColumnName="COD_EQUIPO" msprop:design-time-name="bd90f310-c777-42c8-92fd-36a474afe0c3" type="xs:int" />
+                  <xs:element name="PARTIDO_GANADOS" msprop:FriendlyName="PARTIDO_GANADOS" msprop:DbColumnName="PARTIDO_GANADOS" msprop:design-time-name="19fd5d1b-d1f7-48ed-856c-80a79cb6d81d" type="xs:int" />
+                  <xs:element name="PARTIDO_EMPATADO" msprop:FriendlyName="PARTIDO_EMPATADO" msprop:DbColumnName="PARTIDO_EMPATADO" msprop:design-time-name="8a7f7c80-d4a3-4252-9068-72b5ffb6f6a2" type="xs:int" />
+                  <xs:element name="PARTIDO_PERDIDO" msprop:FriendlyName="PARTIDO_PERDIDO" msprop:DbColumnName="PARTIDO_PERDIDO" msprop:design-time-name="307c6d7b-1b8f-43d3-9f25-f2ba286a8105" type="xs:int" />
+                  <xs:element name="PUNTAJE" msprop:FriendlyName="PUNTAJE" msprop:DbColumnName="PUNTAJE" msprop:design-time-name="f4d7f40c-0f8d-4e61-b0de-482d9e89b8e0" type="xs:int" />
+                  <xs:element name="GOL_AFAVOR" msprop:FriendlyName="GOL_AFAVOR" msprop:DbColumnName="GOL_AFAVOR" msprop:design-time-name="b93a2b72-aa61-47b2-a617-86ba8c563297" type="xs:int" />
+                  <xs:element name="GOL_ENCONTRA" msprop:FriendlyName="GOL_ENCONTRA" msprop:DbColumnName="GOL_ENCONTRA" msprop:design-time-name="b1a288ea-695a-4eb8-a3c4-af0438d0c741" type="xs:int" />
+                  <xs:element name="DIFERENCIA_GOL" msprop:FriendlyName="DIFERENCIA_GOL" msprop:DbColumnName="DIFERENCIA_GOL" msprop:design-time-name="3c70fa6f-ffc6-49e2-b442-c23e2cc8380b" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_FACT_GOLES" msprop:DbTableName="FACT_GOLES" msprop:FriendlyName="FACT_GOLES" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="e33fa860-10b3-4a0c-8461-dc0146f2701a">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="GOLES_KEY" msprop:FriendlyName="GOLES_KEY" msprop:DbColumnName="GOLES_KEY" msprop:design-time-name="57b06d0e-0167-4980-b6de-5e4b813b2d92" type="xs:int" />
+                  <xs:element name="COD_JUGADOR" msprop:FriendlyName="COD_JUGADOR" msprop:DbColumnName="COD_JUGADOR" msprop:design-time-name="f175d70e-313c-454c-92ae-bf339d50a6a1" type="xs:int" />
+                  <xs:element name="COD_TORNEO" msprop:FriendlyName="COD_TORNEO" msprop:DbColumnName="COD_TORNEO" msprop:design-time-name="1267aab8-32f4-4ec0-8cbf-a7e9e7a9b6b1" type="xs:int" />
+                  <xs:element name="COD_TIEMPO" msprop:FriendlyName="COD_TIEMPO" msprop:DbColumnName="COD_TIEMPO" msprop:design-time-name="145042c5-bad4-4e96-908c-521c5b98af37">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="COD_PERIODO" msprop:FriendlyName="COD_PERIODO" msprop:DbColumnName="COD_PERIODO" msprop:design-time-name="03641d58-5718-446f-9e00-fcd349d7a89e" type="xs:int" />
+                  <xs:element name="COD_TIPOGOL" msprop:FriendlyName="COD_TIPOGOL" msprop:DbColumnName="COD_TIPOGOL" msprop:design-time-name="51f690ea-dfe1-4559-83b9-9409bb76f008" type="xs:int" />
+                  <xs:element name="CANT_GOLES" msprop:FriendlyName="CANT_GOLES" msprop:DbColumnName="CANT_GOLES" msprop:design-time-name="c2ca7079-fbc8-4e9e-9a9c-3909bf22cb16" type="xs:int" />
+                  <xs:element name="GOL_PIEIZQUIERDO" msprop:FriendlyName="GOL_PIEIZQUIERDO" msprop:DbColumnName="GOL_PIEIZQUIERDO" msprop:design-time-name="551aa2f4-095d-49ab-8403-9cc948ec1ec1" type="xs:int" />
+                  <xs:element name="GOL_PIEDERECHO" msprop:FriendlyName="GOL_PIEDERECHO" msprop:DbColumnName="GOL_PIEDERECHO" msprop:design-time-name="3b17716e-1f7b-4ecb-902c-fd9d75eef053" type="xs:int" />
+                  <xs:element name="MINUTOGOL" msprop:FriendlyName="MINUTOGOL" msprop:DbColumnName="MINUTOGOL" msprop:design-time-name="69ca810f-34d4-4995-8882-1f734671293f" type="xs:int" />
+                  <xs:element name="GOLES_ASISTIDO" msprop:FriendlyName="GOLES_ASISTIDO" msprop:DbColumnName="GOLES_ASISTIDO" msprop:design-time-name="70d9ebd2-ade9-4512-bc43-7c1bba967e8d" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_FACT_JUGADOR" msprop:DbTableName="FACT_JUGADOR" msprop:FriendlyName="FACT_JUGADOR" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="f98bd467-88c0-4003-bdf2-ef351953ac20">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="FACT_JUGADORKEY" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="FACT_JUGADORKEY" msprop:DbColumnName="FACT_JUGADORKEY" msprop:design-time-name="be25e891-9d31-432f-a1b3-70098adc6214" type="xs:int" />
+                  <xs:element name="COD_JUGADOR" msprop:FriendlyName="COD_JUGADOR" msprop:DbColumnName="COD_JUGADOR" msprop:design-time-name="e5a8344b-7c2f-47a5-9bb3-ddbc5ab4dd05" type="xs:int" />
+                  <xs:element name="COD_TIEMPO" msprop:FriendlyName="COD_TIEMPO" msprop:DbColumnName="COD_TIEMPO" msprop:design-time-name="3f1341b2-87d1-46dc-accc-ca1aef4db4ce">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="COD_TORNEO" msprop:FriendlyName="COD_TORNEO" msprop:DbColumnName="COD_TORNEO" msprop:design-time-name="db8347c4-c087-44ba-b3b4-6393c5ada192" type="xs:int" />
+                  <xs:element name="GOLES" msprop:FriendlyName="GOLES" msprop:DbColumnName="GOLES" msprop:design-time-name="49c4ddb4-a8be-4bdb-9ae1-16511650d965" type="xs:int" />
+                  <xs:element name="ASISTENCIA" msprop:FriendlyName="ASISTENCIA" msprop:DbColumnName="ASISTENCIA" msprop:design-time-name="82911d18-166b-4ec9-ab15-9806dff3c100" type="xs:int" />
+                  <xs:element name="PASES" msprop:FriendlyName="PASES" msprop:DbColumnName="PASES" msprop:design-time-name="825f689e-6ab0-45bb-b9e7-e70384d7ad1b" type="xs:int" />
+                  <xs:element name="MIN_JUGADOS" msprop:FriendlyName="MIN_JUGADOS" msprop:DbColumnName="MIN_JUGADOS" msprop:design-time-name="a1ac2d27-d88e-43c3-a209-15d0044f9a08" type="xs:int" />
+                  <xs:element name="FALTAS" msprop:FriendlyName="FALTAS" msprop:DbColumnName="FALTAS" msprop:design-time-name="a32fae84-5d27-4a40-871b-a24cc4770a90" type="xs:int" />
+                  <xs:element name="TIROS" msprop:FriendlyName="TIROS" msprop:DbColumnName="TIROS" msprop:design-time-name="037ae877-c8df-40bd-89fc-d908ce671d73" type="xs:int" />
+                  <xs:element name="TIRO_APUERTA" msprop:FriendlyName="TIRO_APUERTA" msprop:DbColumnName="TIRO_APUERTA" msprop:design-time-name="c2906c4c-020b-468e-8368-0bdaae084c6e" type="xs:int" />
+                  <xs:element name="ROBO_BALON" msprop:FriendlyName="ROBO_BALON" msprop:DbColumnName="ROBO_BALON" msprop:design-time-name="c6767b45-1d0f-4a8f-a147-0447b20f2cd1" type="xs:int" />
+                  <xs:element name="ATAJADA" msprop:FriendlyName="ATAJADA" msprop:DbColumnName="ATAJADA" msprop:design-time-name="d524f954-d633-4e32-83c3-fdcc07deb17a" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_FACT_PARTIDO" msprop:DbTableName="FACT_PARTIDO" msprop:FriendlyName="FACT_PARTIDO" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="ec61d286-9b30-468f-9967-5379e21cb790">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="FAC_PARTIDOKEY" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="FAC_PARTIDOKEY" msprop:DbColumnName="FAC_PARTIDOKEY" msprop:design-time-name="45e9982e-5248-4435-add5-ae0afcf744b1" type="xs:int" />
+                  <xs:element name="COD_TORNEO" msprop:FriendlyName="COD_TORNEO" msprop:DbColumnName="COD_TORNEO" msprop:design-time-name="fdd2fe90-3ed5-4bdf-8421-bfff5163807d" type="xs:int" />
+                  <xs:element name="COD_TIEMPO" msprop:FriendlyName="COD_TIEMPO" msprop:DbColumnName="COD_TIEMPO" msprop:design-time-name="43af8771-f7b4-4180-a6cd-fa9dcbaa47ca">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="COD_EQUIPO" msprop:FriendlyName="COD_EQUIPO" msprop:DbColumnName="COD_EQUIPO" msprop:design-time-name="5c4c2b33-b824-462b-9287-a8b073062f8b" type="xs:int" />
+                  <xs:element name="GOLES" msprop:FriendlyName="GOLES" msprop:DbColumnName="GOLES" msprop:design-time-name="779dffe5-eb2c-4244-a4de-9a6cc30e76f1" type="xs:int" />
+                  <xs:element name="PASES" msprop:FriendlyName="PASES" msprop:DbColumnName="PASES" msprop:design-time-name="5123ae7e-61fd-4668-8f53-602c15991613" type="xs:int" />
+                  <xs:element name="PASES_COMPLETADO" msprop:FriendlyName="PASES_COMPLETADO" msprop:DbColumnName="PASES_COMPLETADO" msprop:design-time-name="9abc3fed-991d-414a-96d8-ba15564df678" type="xs:int" />
+                  <xs:element name="POSICION_BALON" msprop:FriendlyName="POSICION_BALON" msprop:DbColumnName="POSICION_BALON" msprop:design-time-name="de0f4862-9c2a-45e5-be66-bf2d70f63547" type="xs:int" />
+                  <xs:element name="FALTAS" msprop:FriendlyName="FALTAS" msprop:DbColumnName="FALTAS" msprop:design-time-name="cde883de-0a43-4918-824a-9e78f2d1f509" type="xs:int" />
+                  <xs:element name="TIROS" msprop:FriendlyName="TIROS" msprop:DbColumnName="TIROS" msprop:design-time-name="16fcb1ce-d019-424e-8a78-728b51a0282e" type="xs:int" />
+                  <xs:element name="TIROS_PUERTA" msprop:FriendlyName="TIROS_PUERTA" msprop:DbColumnName="TIROS_PUERTA" msprop:design-time-name="f7563dbf-69ad-45e8-a987-876e0fddcb80" type="xs:int" />
+                  <xs:element name="ROBO_BALON" msprop:FriendlyName="ROBO_BALON" msprop:DbColumnName="ROBO_BALON" msprop:design-time-name="22107294-2678-48bb-b775-9f3101f86e01" type="xs:int" />
+                  <xs:element name="ATAJADAS" msprop:FriendlyName="ATAJADAS" msprop:DbColumnName="ATAJADAS" msprop:design-time-name="48230ca1-19d5-4362-908f-47f8812fbcb1" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_FACT_TIEMPOJUEGO" msprop:DbTableName="FACT_TIEMPOJUEGO" msprop:FriendlyName="FACT_TIEMPOJUEGO" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="6192dfb2-db5b-4e26-b573-68edfed5c20c">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="FACT_TIEMPOJUEGOKEY" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="FACT_TIEMPOJUEGOKEY" msprop:DbColumnName="FACT_TIEMPOJUEGOKEY" msprop:design-time-name="fd4c6ad3-1713-415b-bdb8-36110aa13c66" type="xs:int" />
+                  <xs:element name="COD_TIEMPO" msprop:FriendlyName="COD_TIEMPO" msprop:DbColumnName="COD_TIEMPO" msprop:design-time-name="7a264122-8cde-4a53-bdb5-7eddaff96ca6">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="COD_TORNEO" msprop:FriendlyName="COD_TORNEO" msprop:DbColumnName="COD_TORNEO" msprop:design-time-name="33d705fa-4db5-438b-a1ff-9eec83fda28b" type="xs:int" />
+                  <xs:element name="TIEMPO_TOTALP" msprop:FriendlyName="TIEMPO_TOTALP" msprop:DbColumnName="TIEMPO_TOTALP" msprop:design-time-name="888da77b-d6c8-4e5a-919f-913c15811eb0" type="xs:int" />
+                  <xs:element name="RETRASO_INICIAL" msprop:FriendlyName="RETRASO_INICIAL" msprop:DbColumnName="RETRASO_INICIAL" msprop:design-time-name="3e1b8657-3795-41cb-91f9-ece613e07435" type="xs:int" />
+                  <xs:element name="PRIMER_TIEMPOEXTRA" msprop:FriendlyName="PRIMER_TIEMPOEXTRA" msprop:DbColumnName="PRIMER_TIEMPOEXTRA" msprop:design-time-name="f4e4052f-7a98-4216-88e2-09b360bcf281" type="xs:int" />
+                  <xs:element name="SEGUNDO_TIEMPOEXTRA" msprop:FriendlyName="SEGUNDO_TIEMPOEXTRA" msprop:DbColumnName="SEGUNDO_TIEMPOEXTRA" msprop:design-time-name="a2903334-a6de-425f-8258-2601fd26cdb1" type="xs:int" />
+                  <xs:element name="TOTAL_TIEMPOEXTRA" msprop:FriendlyName="TOTAL_TIEMPOEXTRA" msprop:DbColumnName="TOTAL_TIEMPOEXTRA" msprop:design-time-name="4eccc552-7b70-4c31-b35d-2b1f391a7680" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_ARBITRO" />
+          <xs:field xpath="COD_ARBITRO" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_EQUIPO_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_EQUIPO" />
+          <xs:field xpath="COD_EQUIPO" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_JUGADOR_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_JUGADOR" />
+          <xs:field xpath="COD_JUGADOR" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_PERIODO_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_PERIODO" />
+          <xs:field xpath="COD_PERIODO" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_TIEMPO_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_TIEMPO" />
+          <xs:field xpath="FECHA" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_TIPOARBITRO_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_TIPOARBITRO" />
+          <xs:field xpath="COD_TIPOARBITRO" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_TIPOGOL_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_TIPOGOL" />
+          <xs:field xpath="COD_TIPOGOL" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_TORNEO_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_TORNEO" />
+          <xs:field xpath="PARTIDO" />
+        </xs:unique>
+        <xs:unique name="dbo_FACT_ARBITRO_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_FACT_ARBITRO" />
+          <xs:field xpath="FACT_ARBITROKEY" />
+        </xs:unique>
+        <xs:unique name="dbo_FACT_EQUIPO_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_FACT_EQUIPO" />
+          <xs:field xpath="FACT_EQUIPOKEY" />
+        </xs:unique>
+        <xs:unique name="dbo_FACT_GOLES_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_FACT_GOLES" />
+          <xs:field xpath="GOLES_KEY" />
+        </xs:unique>
+        <xs:unique name="dbo_FACT_JUGADOR_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_FACT_JUGADOR" />
+          <xs:field xpath="FACT_JUGADORKEY" />
+        </xs:unique>
+        <xs:unique name="dbo_FACT_PARTIDO_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_FACT_PARTIDO" />
+          <xs:field xpath="FAC_PARTIDOKEY" />
+        </xs:unique>
+        <xs:unique name="dbo_FACT_TIEMPOJUEGO_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_FACT_TIEMPOJUEGO" />
+          <xs:field xpath="FACT_TIEMPOJUEGOKEY" />
+        </xs:unique>
+        <xs:keyref name="FK__FACT_TIEM__COD_T__2BFE89A6" refer="dbo_DIM_TIEMPO_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_TIEMPOJUEGO" />
+          <xs:field xpath="COD_TIEMPO" />
+        </xs:keyref>
+        <xs:keyref name="FK__FACT_TIEM__COD_T__2CF2ADDF" refer="dbo_DIM_TORNEO_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_TIEMPOJUEGO" />
+          <xs:field xpath="COD_TORNEO" />
+        </xs:keyref>
+        <xs:keyref name="FK__FACT_PART__COD_T__3587F3E0" refer="dbo_DIM_TIEMPO_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_PARTIDO" />
+          <xs:field xpath="COD_TIEMPO" />
+        </xs:keyref>
+        <xs:keyref name="FK__FACT_PART__COD_T__367C1819" refer="dbo_DIM_TORNEO_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_PARTIDO" />
+          <xs:field xpath="COD_TORNEO" />
+        </xs:keyref>
+        <xs:keyref name="FK__FACT_PART__COD_E__3493CFA7" refer="dbo_DIM_EQUIPO_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_PARTIDO" />
+          <xs:field xpath="COD_EQUIPO" />
+        </xs:keyref>
+        <xs:keyref name="FK__FACT_JUGA__COD_J__2FCF1A8A" refer="dbo_DIM_JUGADOR_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_JUGADOR" />
+          <xs:field xpath="COD_JUGADOR" />
+        </xs:keyref>
+        <xs:keyref name="FK__FACT_JUGA__COD_T__30C33EC3" refer="dbo_DIM_TIEMPO_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_JUGADOR" />
+          <xs:field xpath="COD_TIEMPO" />
+        </xs:keyref>
+        <xs:keyref name="FK__FACT_JUGA__COD_T__31B762FC" refer="dbo_DIM_TORNEO_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_JUGADOR" />
+          <xs:field xpath="COD_TORNEO" />
+        </xs:keyref>
+        <xs:keyref name="FK__FACT_GOLE__COD_P__1CBC4616" refer="dbo_DIM_PERIODO_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_GOLES" />
+          <xs:field xpath="COD_PERIODO" />
+        </xs:keyref>
+        <xs:keyref name="FK__FACT_GOLE__GOLES__18EBB532" refer="dbo_DIM_JUGADOR_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_GOLES" />
+          <xs:field xpath="COD_JUGADOR" />
+        </xs:keyref>
+        <xs:keyref name="FK__FACT_GOLE__COD_T__1BC821DD" refer="dbo_DIM_TIPOGOL_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_GOLES" />
+          <xs:field xpath="COD_TIPOGOL" />
+        </xs:keyref>
+        <xs:keyref name="FK__FACT_GOLE__COD_T__19DFD96B" refer="dbo_DIM_TIEMPO_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_GOLES" />
+          <xs:field xpath="COD_TIEMPO" />
+        </xs:keyref>
+        <xs:keyref name="FK__FACT_GOLE__COD_T__1AD3FDA4" refer="dbo_DIM_TORNEO_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_GOLES" />
+          <xs:field xpath="COD_TORNEO" />
+        </xs:keyref>
+        <xs:keyref name="FK__FACT_EQUI__COD_T__2739D489" refer="dbo_DIM_TIEMPO_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_EQUIPO" />
+          <xs:field xpath="COD_TIEMPO" />
+        </xs:keyref>
+        <xs:keyref name="FK__FACT_EQUI__COD_T__282DF8C2" refer="dbo_DIM_TORNEO_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_EQUIPO" />
+          <xs:field xpath="COD_TORNEO" />
+        </xs:keyref>
+        <xs:keyref name="FK__FACT_EQUI__COD_E__29221CFB" refer="dbo_DIM_EQUIPO_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_EQUIPO" />
+          <xs:field xpath="COD_EQUIPO" />
+        </xs:keyref>
+        <xs:keyref name="FK__FACT_ARBI__COD_P__236943A5" refer="dbo_DIM_PERIODO_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_ARBITRO" />
+          <xs:field xpath="COD_PERIODO" />
+        </xs:keyref>
+        <xs:keyref name="FK__FACT_ARBI__COD_T__208CD6FA" refer="dbo_DIM_TIPOARBITRO_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_ARBITRO" />
+          <xs:field xpath="COD_TIPOARBITRO" />
+        </xs:keyref>
+        <xs:keyref name="FK__FACT_ARBI__COD_J__245D67DE" refer="dbo_DIM_JUGADOR_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_ARBITRO" />
+          <xs:field xpath="COD_JUGADOR" />
+        </xs:keyref>
+        <xs:keyref name="FK__FACT_ARBI__COD_T__2180FB33" refer="dbo_DIM_TIEMPO_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_ARBITRO" />
+          <xs:field xpath="COD_TIEMPO" />
+        </xs:keyref>
+        <xs:keyref name="FK__FACT_ARBI__COD_A__1F98B2C1" refer="Constraint1">
+          <xs:selector xpath=".//dbo_FACT_ARBITRO" />
+          <xs:field xpath="COD_ARBITRO" />
+        </xs:keyref>
+        <xs:keyref name="FK__FACT_ARBI__COD_T__22751F6C" refer="dbo_DIM_TORNEO_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_ARBITRO" />
+          <xs:field xpath="COD_TORNEO" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <LIGADW_VISTAS xmlns="" />
+  </Schema>
+</DataSourceView>

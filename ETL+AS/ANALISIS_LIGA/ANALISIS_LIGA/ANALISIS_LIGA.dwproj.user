@@ -1,0 +1,29 @@
+<AnalysisServicesUserConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Configurations>
+    <Configuration>
+      <Name>Development</Name>
+      <Options>
+        <UserIDs>
+          <ConfigurationSetting>
+            <Id>LIGADW_DATA</Id>
+            <Name>LIGADW_DATA</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA0m5FqRf2hEuBsgXpcPJrIwAAAAAYAAAATABJAEcAQQBEAFcAXwBEAEEAVABBAAAAEGYAAAABAAAgAAAAgav18bk0x+tcwvwDEqRJhBD/qX6u5qH0KPjFBu21G3AAAAAADoAAAAACAAAgAAAAQp8m30jxut7foaryNwuvQMlfelZvDdoJLICnFIjqOI8gAAAA+6Hei/TJ4PcH1FBchW7m/WrsEGOkuP7PNLW+V4uQDH1AAAAAup4kmTWDypfuIhHCyH3R1DlpbUsO/dJS+ihCVQsZFmw9bQ937tRCrBnZwVwKuEDe+cdjAxs5Hjz4et3E2g1QTQ==</Value>
+          </ConfigurationSetting>
+        </UserIDs>
+        <UserPasswords>
+          <ConfigurationSetting>
+            <Id>LIGADW_DATA</Id>
+            <Name>LIGADW_DATA</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA0m5FqRf2hEuBsgXpcPJrIwAAAAAYAAAATABJAEcAQQBEAFcAXwBEAEEAVABBAAAAEGYAAAABAAAgAAAAv/5P2c6Qx06+Kjn9FCzWQxawrs74D5q8p3W7e/ra3lcAAAAADoAAAAACAAAgAAAAt1pc7IDBaEelBOeAaD1iYNA3XBv9NpisflASAVJ6KCQgAAAAE9G35gBbhZXgb8EUDmdG3EXoQagN6pi53OLcJijYqAlAAAAAd2TqErMyXV3B7taF3eQ11SZtiPtbglyeAwnjLqT0kmL0hGhOgYlyV9I9uhZuHL+LoQxm7aQuWFsqv6fBapAPjg==</Value>
+          </ConfigurationSetting>
+        </UserPasswords>
+        <TargetServer>localhost</TargetServer>
+        <TargetDatabase>ANALISIS_LIGA</TargetDatabase>
+        <StartObject>
+          <ObjectId></ObjectId>
+          <ObjectType>Current</ObjectType>
+        </StartObject>
+      </Options>
+    </Configuration>
+  </Configurations>
+</AnalysisServicesUserConfiguration>
